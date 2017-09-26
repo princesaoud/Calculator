@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter an integer"
+        android:id="@+id/number_one"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter another integer"
+        android:id="@+id/number_two"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_addition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcul_addition"
+            android:text="+"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_soustraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcul_addition"
+            android:text="-"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcul_addition"
+            android:text="x"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/bt_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcul_addition"
+            android:text="/"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/tv_result"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingRight="15dp"
+               android:text="Result"
+               android:textSize="100dp" />
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
